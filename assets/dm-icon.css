@@ -1,12 +1,12 @@
 /* dm-icon.css */
 body {
-    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
-    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
-    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
-    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
+    --dms-icon-svg-url: url('https://softbites.github.io/discord/assets/blackcat.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-size: 100%; /* size of the svg (css mask-size property) */
+    --dms-icon-color-before: #ffffff; /* normal icon color */
+    --dms-icon-color-after: #ffffff; /* icon color when button is hovered/selected */
     --dms-background-image-url: url(''); /* url of the background image */
     --dms-background-image-size: cover; /* size of the background image (css background-size property) */
-    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* fixed color/gradient (css background property) */
+    --dms-background-color: hsla(0,0%,0%,0); /* fixed color/gradient (css background property) */
 }
 
 @property --custom-dms-icon {
@@ -33,8 +33,8 @@ body {
         content: '';
         display: block;
         position: absolute;
-        width: 65%;
-        height: 65%;
+        width: 100%;
+        height: 100%;
         background: var(--dms-icon-color-before);
         mask-image: var(--dms-icon-svg-url);
         mask-size: var(--dms-icon-svg-size);
