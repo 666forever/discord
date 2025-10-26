@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>softbites.github.io/discord</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        background: #0e0e0e;
+        color: #e5e5e5;
+        padding: 2rem;
+        line-height: 1.6;
+      }
+      h1 {
+        color: #00bcd4;
+      }
+      a {
+        color: #9be7ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin: 0.3em 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      button {
+        background: #1e1e1e;
+        border: 1px solid #333;
+        color: #ccc;
+        padding: 0.2em 0.5em;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.8rem;
+      }
+      button:hover {
+        background: #2a2a2a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>softbites.github.io/discord</h1>
+    <p>Auto-listing of hosted Discord/Vencord theme files:</p>
+    <ul id="file-list"><li>Loading files...</li></ul>
+
+    <script>
+      const username = "softbites";
+      const repo = "discord";
+      const apiUrl = `https://api.github.com/repos/${username}/${repo}/contents`;
+
+      async function fetchFiles(path = "") {
+        const response = await fetch(`${apiUrl}/${path}`);
+        if (!response.ok) return [];
+        return response.json();
+      }
+
+      async function listFiles(path = "") {
+        const data = await fetchFiles(path);
+        const ul = document.getElementById("file-list");
+        ul.innerHTML = "";
+
+        for (const item of data) {
+          if (item.type === "dir") {
+            // Recursively scan subfolders
+            const subData = await fetchFiles(item.path);
+            for (const subItem of subData) {
+              if (subItem.name.endsWith(".css")) addListItem(subItem);
+            }
+          } else if (item.name.endsWith(".css")) {
+            addListItem(item);
+          }
+        }
+
+        function addListItem(file) {
+          const cssUrl = `https://${username}.github.io/${repo}/${file.path}`;
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <a href="${cssUrl}" target="_blank">${file.path}</a>
+            <button onclick="navigator.clipboard.writeText('@import url(\\'${cssUrl}\\');')">
+              Copy @import
+            </button>`;
+          ul.appendChild(li);
+        }
+
+        if (ul.children.length === 0) {
+          ul.innerHTML = "<li>No CSS files found.</li>";
+        }
+      }
+
+      listFiles();
+    </script>
+  </body>
+</html>
