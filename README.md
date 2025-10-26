@@ -1,2 +1,2 @@
-# softbites.github.io
-Just some Vencord CSS
+# Just some Vencord CSS
+
