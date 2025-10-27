@@ -1318,12 +1318,12 @@ body {
         transition: background-color 0.15s ease-out;
     }
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before {
-        transform: rotate(0deg) scale(1);
+        transform: scale(0.9);
     }
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
         background: var(--dms-icon-color-after);
-        transform: rotate(-360deg) scale(1);
+        transform: scale(0.8);
     }
 
     @container body style(--animations: on) {
