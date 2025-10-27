@@ -1287,7 +1287,7 @@ body {
     --dms-icon-color-after: hsla(0,0%,100%,1); /* icon color when button is hovered/selected */
     --dms-background-image-url: url(''); /* url of the background image */
     --dms-background-image-size: none; /* size of the background image (css background-size property) */
-    --dms-background-color: transparent !important;
+    --dms-background-color: #000000 !important;
 }
 
 @property --custom-dms-icon {
