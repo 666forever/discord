@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap');
+@import url('https://softbites.github.io/discord/misc/mess.css');
 @import url('https://softbites.github.io/discord/misc/tweaks.css');
-/* main.css */
 
+/* main.css */
 :root {
     container-name: root;
     --custom-guild-list-padding: 12px;
@@ -19,7 +19,6 @@ body {
     font-optical-sizing: auto;
     font-weight: 200;
 
-   
     /* sizes */
     --gap: 12px; /* spacing between panels */
     --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
@@ -28,7 +27,6 @@ body {
 
     --border-hover-transition: 0.2s ease;
 }
-
 .visual-refresh {
     /* panel separation */
     .guilds_c48ade /* server list */, 
