@@ -10,18 +10,13 @@
     --border-hover: var(--border-subtle);
 }
 
-:root {
-  --font: 'JetBrains Mono', monospace !important;
-  --code-font: 'JetBrains Mono', monospace !important;
-
-  font-family: var(--font) !important;
-  font-size: 0.85rem !important;
-  font-weight: 200 !important;
-  letter-spacing: 0.15px !important;
-  line-height: 1.35 !important;
-}
-
 body {
+    container-name: body;
+
+    /* font, change to '' for default discord font */
+    --font: 'JetBrains Mono', monospace;
+    --code-font: 'JetBrains Mono', monospace;
+
     /* sizes */
     --gap: 12px; /* spacing between panels */
     --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
