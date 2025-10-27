@@ -14,8 +14,8 @@ body {
     container-name: body;
 
     /* font, change to '' for default discord font */
-    --font: 'JetBrains Mono', monospace;
-    --code-font: var(--font);
+    --font: 'figtree';
+    --code-font: '';
     font-optical-sizing: auto;
     font-weight: 200;
 
@@ -78,7 +78,13 @@ body {
         left: 0;
         width: 100%;
     }
-
+    .chat_f75fb0 > .subtitleContainer_f75fb0 {
+        text-transform: unset !important;
+        font-family: "Noto Sans";
+        font-size: 6px;
+        font-weight: 200;
+    
+    }
     .root_bfe55a /* call background */ {
         background: hsla(0,0%,0%,0.4);
     }
@@ -441,7 +447,12 @@ body {
     body {
         background: transparent !important;
     }
-   
+}
+
+body {
+    --font-primary: var(--font), 'gg sans';
+    --font-display: var(--font), 'gg sans';
+    --font-code: var(--code-font), 'gg mono';
 }
 
 [class*='scroll'] {
@@ -1994,9 +2005,4 @@ display: none;
 span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
-}
-body {
-  --font-primary: 'JetBrains Mono', monospace !important;
-  --font-display: 'JetBrains Mono', monospace !important;
-  --font-code: 'JetBrains Mono', monospace !important;
 }
