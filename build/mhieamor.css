@@ -1310,7 +1310,6 @@ body {
         position: absolute;
         width: 110%;
         height: 110%;
-        background: var(--dms-icon-color-before);
         mask-image: var(--dms-icon-svg-url);
         mask-size: var(--dms-icon-svg-size);
         mask-position: center;
