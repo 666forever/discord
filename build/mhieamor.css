@@ -1,8 +1,7 @@
 /* main.css */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;400;600&display=swap');
 @import url('https://softbites.github.io/discord/misc/tweaks.css');
-
-
+   
 :root {
     container-name: root;
     --custom-guild-list-padding: 12px;
@@ -13,10 +12,11 @@
 
 body {
     container-name: body;
-
-    /* font, change to '' for default discord font */
-    --font: 'figtree';
-    --code-font: '';
+    
+    --font: 'JetBrains Mono', monospace; /* font, change to '' for default discord font */
+    --code-font: 'JetBrains Mono', monospace;
+    font-family: var(--font);
+    font-weight: 400;
 
     /* sizes */
     --gap: 12px; /* spacing between panels */
