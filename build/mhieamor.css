@@ -1693,7 +1693,7 @@ div[class*="subText"] > div > svg[class*="questsIcon"] {
 .chatContent_c19a55,
 .membersWrap_c19a55,
 .form_c19a55 {
-    border: 0px solid var(--panel-border);
+    border: 1px solid var(--panel-border);
 }
 
 :where(.banner__68edb)::before {
@@ -1701,8 +1701,8 @@ div[class*="subText"] > div > svg[class*="questsIcon"] {
 }
 
 :root {
-    --border-thickness: 0px;
-    --panel-border: 0px solid var(--border);
+    --border-thickness: 1px;
+    --panel-border: 1px solid var(--border);
 }
 
 /* ─────────────────── Enhanced Member List */
