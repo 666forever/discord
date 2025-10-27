@@ -1,17 +1,25 @@
-/* main.css */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap');
 @import url('https://softbites.github.io/discord/misc/tweaks.css');
-   
+/* main.css */
+
 :root {
     container-name: root;
     --custom-guild-list-padding: 12px;
     --panel-backdrop-filter: none;
-    --font: 'JetBrains Mono', monospace;
-    --code-font: 'JetBrains Mono', monospace;
+
     --border-hover: var(--border-subtle);
 }
+
 body {
     container-name: body;
+
+    /* font, change to '' for default discord font */
+    --font: 'JetBrains Mono', monospace;
+    --code-font: var(--font);
+    font-optical-sizing: auto;
+    font-weight: 200;
+
+   
     /* sizes */
     --gap: 12px; /* spacing between panels */
     --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
