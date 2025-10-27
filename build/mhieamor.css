@@ -64,6 +64,9 @@ body {
         border-radius: var(--radius-lg);
         border: var(--border-thickness) solid var(--border-subtle);
         backdrop-filter: var(--panel-backdrop-filter);
+        font-size: 99%;
+        font-family: inherit;
+        font-style: inherit;
         box-sizing: border-box;
         transition: border-color var(--border-hover-transition);
 
@@ -77,13 +80,6 @@ body {
         bottom: 0;
         left: 0;
         width: 100%;
-    }
-    .chat_f75fb0 > .subtitleContainer_f75fb0 {
-        text-transform: unset !important;
-        font-family: "Noto Sans";
-        font-size: 6px;
-        font-weight: 200;
-    
     }
     .root_bfe55a /* call background */ {
         background: hsla(0,0%,0%,0.4);
