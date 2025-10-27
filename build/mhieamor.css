@@ -19,7 +19,7 @@ body {
     --code-font: '';
 
     /* sizes */
-    --gap: 6px; /* spacing between panels */
+    --gap: 12px; /* spacing between panels */
     --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
     --border-thickness: 1px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
     --custom-guild-list-width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2 + var(--border-thickness) * 2);
@@ -440,16 +440,6 @@ body {
         background: transparent !important;
     }
 
-    /* ─────────────────── removing borders */
-    .button_a22cb0 {
-        border: 0px solid transparent;
-    }
-    .button_e131a9.buttonColor_e131a9.buttonActive_e131a9 {
-        border: 0px solid var(--opacity-green-12);
-    }
-    .slider_a562c8 .barFill_a562c8 {
-        border: 0px solid hsla(0, 0%, 100%, .1);
-    }
 }
 
 body {
@@ -467,7 +457,7 @@ body {
 
 /* ─────────────────── settings left side */
 .sidebarRegionScroller__23e6b {
-    background: hsla(0,0%,0%,1);
+    background: hsla(0,0%,5%,1);
 }
 
 /* ─────────────────── animations.css */
@@ -503,13 +493,11 @@ body {
         /* list hover channel dot */
         .unread__2ea32 {
             border-radius: 50%;
-            width: 4px;
-            height: 4px;
-            margin-left: 0px;
-            background: transparent !important;
+            width: 8px;
+            height: 8px;
+            margin-left: -4px;
             transition: var(--list-item-transition);
             will-change: margin-left;
-            filter: drop-shadow(0 0 3px hsla(284, 37%, 70%, 0.8));
         }
         .wrapper__2ea32:hover .unread__2ea32 {
             margin-left: 4px;
@@ -607,16 +595,6 @@ body {
     --idle: hsla(40,70%,55%,1);
     --streaming: hsla(285,40%,65%,1);
     --offline: hsla(230,5%,45%,1);
-
-    /* ───────── border colors */
-    --border: hsla(0,0%,0%,0);
-    --border-hover: hsla(0,0%,0%,0);
-    --border-light: hsla(0,0%,0%,0);
-    --border-faint: hsla(0,0%,0%,0);
-    --border-normal: hsla(0,0%,0%,0);
-    --button-border: hsla(0,0%,0%,0);
-    --border-subtle: hsla(0,0%,0%,0);
-    --control-border-primary-default: hsla(0,0%,0%,0);
 
     /* ───────── base colors */
     --red-1: hsl(0,100%,25%);
@@ -1852,17 +1830,6 @@ nav.wrapper_ef3116{
 .mentioned__5126c:before {
     left: -6px;
     filter: drop-shadow(0 0 4px hsla(0,0%,100%,1));
-}
-
-/* ─────────────────── No Borders */
-:root,
-.theme-dark,
-.theme-light {
-   --app-border-frame: transparent !important;
-   --border-subtle: transparent !important;
-   --border-faint: transparent !important;
-   --divider-subtle: transparent !important;
-   --background-modifier-accent: transparent !important;
 }
 
 /* ─────────────────── Hide Discovery Button */
