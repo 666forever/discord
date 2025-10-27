@@ -1,12 +1,12 @@
 /* dm-icon.css */
 body {
-    --dms-icon-svg-url: url('https://softbites.github.io/discord/assets/blackcat.svg'); /* icon svg url. MUST BE A SVG. */
-    --dms-icon-svg-size: 100%; /* size of the svg (css mask-size property) */
-    --dms-icon-color-before: #ffffff; /* normal icon color */
-    --dms-icon-color-after: #ffffff; /* icon color when button is hovered/selected */
+    --dms-icon-svg-url: url('https://softbites.github.io/discord/assets/meow.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
+    --dms-icon-color-before: hsla(0,0%,90%,1); /* normal icon color */
+    --dms-icon-color-after: hsla(0,0%,100%,1); /* icon color when button is hovered/selected */
     --dms-background-image-url: url(''); /* url of the background image */
     --dms-background-image-size: cover; /* size of the background image (css background-size property) */
-    --dms-background-color: hsla(0,0%,0%,0); /* fixed color/gradient (css background property) */
+    --dms-background-color: none; /* fixed color/gradient (css background property) */
 }
 
 @property --custom-dms-icon {
@@ -31,10 +31,15 @@ body {
     }
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::before {
         content: '';
+        display: block;
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 110%;
+        height: 110%;
         background: var(--dms-icon-color-before);
+        mask-image: var(--dms-icon-svg-url);
+        mask-size: var(--dms-icon-svg-size);
+        mask-position: center;
+        mask-repeat: no-repeat;
         transition: background-color 0.15s ease-out;
     }
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before {
@@ -43,7 +48,7 @@ body {
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
         background: var(--dms-icon-color-after);
-        transform: rotate(-360deg) scale(0.8);
+        transform: rotate(-360deg) scale(0.9);
     }
 
     @container body style(--animations: on) {
