@@ -6,17 +6,12 @@
     container-name: root;
     --custom-guild-list-padding: 12px;
     --panel-backdrop-filter: none;
-
-    --border-hover: var(--border-subtle);
-}
-
-body {
-    container-name: body;
-
-    /* font, change to '' for default discord font */
     --font: 'JetBrains Mono', monospace;
     --code-font: 'JetBrains Mono', monospace;
-
+    --border-hover: var(--border-subtle);
+}
+body {
+    container-name: body;
     /* sizes */
     --gap: 12px; /* spacing between panels */
     --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
@@ -438,13 +433,7 @@ body {
     body {
         background: transparent !important;
     }
-
-}
-
-body {
-    --font-primary: var(--font), 'gg sans';
-    --font-display: var(--font), 'gg sans';
-    --font-code: var(--code-font), 'gg mono';
+   
 }
 
 [class*='scroll'] {
@@ -1998,4 +1987,8 @@ span.content__908e2 {
     background: none;
     color: hsla(204,35%,35%,0.3);
 }
-
+body {
+  --font-primary: 'JetBrains Mono', monospace !important;
+  --font-display: 'JetBrains Mono', monospace !important;
+  --font-code: 'JetBrains Mono', monospace !important;
+}
