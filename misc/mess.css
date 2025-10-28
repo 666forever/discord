@@ -42,7 +42,7 @@
 /* ──── panels background ──────── */
 .panels_c48ade,
 .panel__5dec7 {
-    background: var(--gif2-bg);
+    background: url('https://i.imgur.com/5wixFg4.gif');
     background-size: cover;
     background-position: center;	
 }
@@ -88,24 +88,24 @@
     color: var(--white);
 }
 
-/* ─────────────────── Hide Unwanted Buttons */
-div.circleIconButton__5bc7e.discoveryIcon_ef3116,
-button[aria-label="Send a gift"],
-div[aria-label="Send a gift"],
-button[aria-label="Apps"],
-div.channelAppLauncher_e6e74f,
-button[aria-label="Open GIF picker"],
-div[aria-label="Open GIF picker"],
-button[aria-label="Open sticker picker"],
-div[aria-label="Open sticker picker"],
-[data-list-item-id*="__nitro"],
-[data-list-item-id*="__shop"] {
-    display: none !important;
-}
-
-[href='/quest-home']{
-    display: none !important;
-}
+    /* ─────────────────── Hide Unwanted Buttons */
+    div.circleIconButton__5bc7e.discoveryIcon_ef3116,
+    button[aria-label="Send a gift"],
+    div[aria-label="Send a gift"],
+    button[aria-label="Apps"],
+    div.channelAppLauncher_e6e74f,
+    button[aria-label="Open GIF picker"],
+    div[aria-label="Open GIF picker"],
+    button[aria-label="Open sticker picker"],
+    div[aria-label="Open sticker picker"],
+    [data-list-item-id*="__nitro"],
+    [data-list-item-id*="__shop"] {
+        display: none !important;
+    }
+    
+    [href='/quest-home']{
+        display: none !important;
+    }
 
 /* ─────────────────── quest icon */
 div[class*="subText"] > div > svg[class*="questsIcon"] {
