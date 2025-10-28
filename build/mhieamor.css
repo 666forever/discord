@@ -5,7 +5,7 @@
 :root {
     container-name: root;
     
-    --font: 'Ubuntu';      /* font */
+    --font: 'figtree';      /* font */
     font-weight: 400;
 
     --custom-guild-list-padding: 12px;
