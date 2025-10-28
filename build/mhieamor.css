@@ -1,24 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
 @import url('https://softbites.github.io/discord/misc/mess.css');
 @import url('https://softbites.github.io/discord/misc/tweaks.css');
 
-/* main.css */
 :root {
     container-name: root;
+    
+    --font: 'Ubuntu';   /* font */
+    font-weight: 400;
+
     --custom-guild-list-padding: 12px;
     --panel-backdrop-filter: none;
-
     --border-hover: var(--border-subtle);
 }
 
 body {
     container-name: body;
 
-    /* font, change to '' for default discord font */
-    --font: 'Ubuntu';
-    --code-font: '';
-    font-optical-sizing: auto;
-    font-weight: 400;
 
     /* sizes */
     --gap: 12px; /* spacing between panels */
