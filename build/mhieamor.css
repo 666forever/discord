@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://softbites.github.io/discord/misc/mess.css');
 @import url('https://softbites.github.io/discord/misc/tweaks.css');
 
 :root {
     container-name: root;
     
-    --font: 'Ubuntu';   /* font */
+    --font: 'Ubuntu';
+    .ubuntu-regular { /* font */
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
+    font-style: normal;
 
     --custom-guild-list-padding: 12px;
     --panel-backdrop-filter: none;
