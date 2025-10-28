@@ -5,11 +5,8 @@
 :root {
     container-name: root;
     
-    --font: 'Ubuntu';
-    .ubuntu-regular { /* font */
-    font-family: "Ubuntu", sans-serif;
+    --font: 'Ubuntu';      /* font */
     font-weight: 400;
-    font-style: normal;
 
     --custom-guild-list-padding: 12px;
     --panel-backdrop-filter: none;
