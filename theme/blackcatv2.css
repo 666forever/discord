@@ -1,0 +1,47 @@
+/**
+ * @name BLACKCAT 🐈‍⬛
+ * @author 666forever
+ * @description import and settings
+ * @website https://github.com/666forever/discord
+**/
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://666forever.github.io/discord/build/BlackCat.css');
+
+:root {
+    --font: 'Oxygen', 'gg sans', 'Noto Sans', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+    font-weight: 400;
+
+    /* colour */
+    --base00: #191724;
+    --base01: #1f1d2e;
+    --base02: #26233a;
+    --base03: #6e6a86;
+    --base04: #908caa;
+    --base05: #bcbabe;
+    --base06: #e0def4;
+    --base07: #524f67;
+    --base08: #eb6f92;
+    --base09: #f6c177;
+    --base0A: #ebbcba;
+    --base0B: #31748f;
+    --base0C: #9ccfd8;
+    --base0D: #c4a7e7;
+    --base0E: #f6c177;
+    --base0F: #524f67;
+
+    /* custom assets */
+    --custom-guild-list-padding: 12px;
+    --home-icon: url('https://666forever.github.io/discord/assets/homecat.svg');
+    --user-bg: url('https://i.imgur.com/OQP9BMq.gif');
+}
+
+:root {
+    --gap: 12px;
+    --radius-lg: 12px;
+    --radius-md: 12px;
+    --radius-sm: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 0px;
+    --list-item-transition: 0.2s ease;
+}
