@@ -1,7 +1,10 @@
-/* FILE: grittykitty-settings.css
- * Modular settings layer for 🐈‍⬛ gritty kitty
- * (place this file on a CDN or alongside your main theme and reference it from the main file)
- */
+/* BLACKCAT.css 🐈‍⬛ https://github.com/666forever/discord */
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+    text-rendering: optimizeLegibility !important;
+}
 
 :root {
     --font: 'Oxygen', 'gg sans', 'Noto Sans', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
@@ -28,7 +31,7 @@
     /* custom assets */
     --custom-guild-list-padding: 12px;
     --home-icon: url('https://666forever.github.io/discord/assets/homecat.svg');
-    --user-bg: 'https://i.imgur.com/OQP9BMq.gif'; /* store as string, use url() when applying */
+    --user-bg: url('https://i.imgur.com/OQP9BMq.gif');
 
     /* ────── toggles / tweaks ─── */
     --hide-nameplates: true;
@@ -62,46 +65,6 @@
     --border-thickness: 0px;
     --list-item-transition: 0.2s ease;
 }
-
-/*
-  NOTES:
-  - We store --user-bg as a string (no url() inside) to avoid issues with some clients when using variables.
-  - When applying background-image in the main theme, use: background-image: url(var(--user-bg));
-  - Host this settings file on a CDN (or alongside the main theme) and update the @import in the main file to point to it.
-*/
-
-
-/* -----------------------------------------------------------------
-   FILE: grittykitty.css (main theme - cleaned for modular import)
-   Keep this file as the full theme. It now imports the settings layer
-   at the top so variables resolve correctly without duplicating the
-   :root block.
-   ----------------------------------------------------------------- */
-
-/**
- * @name 🐈‍⬛ gritty kitty
- * @author 666forever
- * @description 7pm
- * @website https://github.com/666forever/discord
-**/
-
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
-/* IMPORTANT: replace the import below with the hosted URL of the settings file
-   e.g. @import url('https://yourcdn.com/grittykitty-settings.css');
-   If you keep both files locally, use the relative path as appropriate.
-*/
-@import url('grittykitty-settings.css');
-
-* {
-    text-rendering: optimizeLegibility !important;
-}
-
-/* modules */
-
-/* The original :root and body variable blocks were intentionally removed
-   and moved into grittykitty-settings.css to keep the main theme stable
-   and modular.  Everything else in the original file is preserved below
-   with minimal changes necessary for correctness. */
 
 .visual-refresh {
     .guilds__5e434, 
