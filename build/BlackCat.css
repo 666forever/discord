@@ -56,7 +56,7 @@
 }
 
 /* smaller general vars that are safe on body scope */
-:root {
+: {
     --gap: 12px;
     --radius-lg: 12px;
     --radius-md: 12px;
@@ -579,7 +579,7 @@ div[class^="header"]:has(div[class^="avatar"]) div[class^="outer"]:has(span[clas
 
 /* User panel image - use url(var(--user-bg)) to avoid variable parsing issues */
 .panels__5e434 {
-    background-image: url(var(--user-bg));
+    background-image: var(--user-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
