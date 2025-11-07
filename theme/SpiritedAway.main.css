@@ -50,14 +50,14 @@
     --border-hover-transition: 0;
 
     --accent-new: #732959; /* stuff that's normally red like mute/deafen buttons */
-    --hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
+    --hover: hsl(221,20%,40%,0.1); /* channels and buttons when hovered */
     --active: hsla(220, 19%, 40%, 0.2); /* channels and buttons when clicked or selected */
     --active-2: hsla(220, 19%, 40%, 0.3); /* extra state for transparent buttons */
-    --message-hover: hsla(230, 0%, 0%, 0.1); /* messages when hovered */
-    --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
-    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
-    --reply: linear-gradient(to right, color-mix(in hsl, var(--text04), transparent 90%) 40%, transparent); /* background of messages that reply to you */
-    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text04), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
+    --message-hover: hsla(221,10%,20%,0.1); /* messages when hovered */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text04), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text04), transparent 95%) 40%, transparent);
 
     /* status indicator colors */
     --online: var(--green-2); /* change to #43a25a for default */
@@ -72,7 +72,9 @@
     --border-light: #0000; /* light border color */
     --button-border: hsl(0, 0%, 50%, 0.1); /* neutral border color of buttons */
 
-    --prompt-text: "type shiit..."; 
+    --prompt-text: "type shiit...";
+    --homebutton-image: url('https://666forever.github.io/discord/assets/badcat.svg');
+    --userpanel-image: url('https://i.imgur.com/7e6SRDn.jpeg');
 }
 
 /*  vr-panels.css          //  ─ 行く ───  🧃  [セッティング]  ───────── */
@@ -123,8 +125,8 @@
         box-sizing: border-box;
     }
     .panels__5e434 {
-        background-image: url('https://i.imgur.com/7e6SRDn.jpeg');
-        background-size: contain;
+        background-image: var(--userpanel-image);
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         padding: 20px 10px;
@@ -133,7 +135,6 @@
         left: 0;
         width: 100%;
     }
-
     
     /*  homebutton.svg          //  ─ 行く ───  🧃  [セッティング]  ───────── */
 
@@ -147,7 +148,7 @@
         content: " ";
         width: 150%; /* Change size if needed */
         height: 150%; /* Change size if needed */
-        background-image: url('https://666forever.github.io/discord/assets/badcat.svg');
+        background-image: var(--homebutton-image);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -299,13 +300,13 @@
         height: auto;
         min-width: fit-content;
     }
-    .members_c8ffbb /* member list inner */,
+
     .member_c8ffbb /* member list item */ {
         background: none;
     }
 
     .resizeHandle__01ae2 /* resize handle */ {
-        background: transparent;
+        background: none;
     }
 
     .privateChannels_e6b769 /* dm list */,
@@ -418,7 +419,7 @@
         background: none;
     }
     .standardSidebarView__23e6b {
-        backdrop-filter: var(--panel-backdrop-filter);
+        backdrop-filter: none;
     }
 
 
@@ -442,6 +443,19 @@
     .bottom__7aaec /* channel list new unreads pill */,
     .unreadBottom__629e4 /* channel list non-community unread pill */ {
         bottom: 0;
+    }
+    .unread__2ea32 {
+        background-color: var(--acct03);
+        filter: drop-shadow(0 0 3px var(--acct03));
+        border-radius: 10px;
+        height: 5px;
+        inset-inline-start: calc(var(--space-xs)* -1 + 1px);
+        margin-top: -5px;
+        margin-left: 5px;
+        position: absolute;
+        top: 50%;
+        width: 4px;
+    
     }
 
     .unreadMentionsIndicatorBottom_ef3116 /* server list new pill */,
@@ -497,6 +511,7 @@
     /* improve server selected marker */
     .pill_e5445c.wrapper__58105 {
         width: calc((var(--custom-guild-list-padding) - 4px) / 2 + 4px);
+        z-index: 1001;
     }
     .item__58105 {
         width: 4px;
@@ -551,7 +566,7 @@
     .app__160d8,
     #app-mount,
     body {
-        background: #00000000 !important;
+        background: none !important;
 
     }
 
@@ -1198,30 +1213,7 @@ body {
         .flash__03436[data-flash=true] /* reply message flash */ {
             background: var(--background-message-highlight);
         }
-
-        /* status indicators */
-        rect[fill='#82838b'] {
-            fill: var(--offline);
-        }
         
-        rect[fill='#43a25a'],
-        path[fill='#43a25a'] /* status activity icon */,
-        path[fill='var(--status-positive)'] /* status activity icon */,
-        .vc-platform-indicator > svg[fill="#43a25a"] {
-            fill: var(--online);
-        }
-        rect[fill='#ca9654'],
-        .vc-platform-indicator > svg[fill='#ca9654'] {
-            fill: var(--idle);
-        }
-        rect[fill='#d83a42'],
-        .vc-platform-indicator > svg[fill='#d83a42'] {
-            fill: var(--dnd);
-        }
-        rect[fill='#9147ff'] {
-            fill: var(--streaming);
-        }
-
         #vc-spotify-player {
             --vc-spotify-green: var(--acct02);
         }
@@ -1243,7 +1235,6 @@ body {
     background: var(--acct03);
     color: var(--text01);   
 }
-
 
 .tabBody__133bf,
 .members_c8ffbb,
