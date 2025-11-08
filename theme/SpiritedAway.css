@@ -6,7 +6,7 @@
 **/
 
 /**
- *💌 ﹑  index   ┊ 
+ *💌 ﹑  index   ┊
  *
  *🍡 ﹑ modules  ┊
  *🧃 ﹑ font     ┊
@@ -162,6 +162,12 @@ body {
     .guilds__5e434 + div:not(.sidebarList__5e434)  {
         width: 100% !important;
     }
+    .guildSeparator__252b6 {
+        background-color: transparent;
+        border-radius: 1px;
+        height: 15px;
+        width: 32px;
+    }
     .sidebarList__5e434 {
         margin-left: var(--gap);
     }
@@ -194,6 +200,9 @@ body {
     }
     .bannerVisible_f37cb1 .headerEllipseBackdrop_f37cb1 {
         display: none;
+    }
+    .banner__68edb:before {
+    border-bottom: 0;
     }
     .headerGlass_f37cb1 {
         top: 0;
@@ -395,6 +404,14 @@ body {
     .slateTextArea_ec4baf  {
         margin-left: 2px;
     }
+    .sectionDivider_e6b769 {
+        background-color: var(--divider-subtle);
+        border: 0;
+        box-shadow: none;
+        height: 0;
+        margin: var(--space-1) var(--space-1);
+        width: 100%;
+    }
     .divider__908e2 {
         box-shadow: none !important;
         color: var(--accent-5);
@@ -451,7 +468,7 @@ body {
         z-index: 1001 !important;
     }
     .item__58105 {
-        position: center;
+        background-color: var(--accent-1) !important;
         width: 6px;
         max-height: 20px;
         border-radius: 4px;
@@ -497,24 +514,24 @@ body {
     .container__91a9d ,
     .channel__972a0 ,
     .side_aa8da2 .item_aa8da2  {
-            transition: margin-left var(--list-item-transition);
-            will-change: margin-left;
+        transition: margin-left var(--list-item-transition);
+        will-change: margin-left;
     }
     .wrapper__2ea32:hover .link__2ea32,
     .side_aa8da2 .item_aa8da2:hover {
-            margin-left: 10px;
+        margin-left: 10px;
     }
     .container__91a9d:hover,
     .channel__972a0:hover {
-            margin-left: 18px;
+        margin-left: 18px;
     }
     .numberBadge__2b1f5 {
-    background-color: #f23f43 !important;
-    color: #ffffff !important;
-    border-radius: 50% !important;
-    font-weight: 600;
-    padding: 0 6px;
-}
+        background-color: #f23f43 !important;
+        color: #ffffff !important;
+        border-radius: 50% !important;
+        font-weight: 600;
+        padding: 0 6px;
+    }
     .unread__2ea32 {
         margin-top: -6px !important;
         border-radius: 25% !important;
@@ -533,6 +550,10 @@ body {
         border: 1px solid var(--border-subtle);
         background-position: center calc(-1 * var(--border-thickness));
         background-size: 100% calc(100% + 2 * var(--border-thickness));
+    }
+    .winButtons_c38106 {
+        color: var(--accent-4);
+        gap: var(--space-16);
     }
     .root__24502 {
         background: none;
@@ -734,9 +755,9 @@ body {
     --button-transparent-background-active: var(--active-2);
     --button-transparent-background-hover: var(--active);
     --button-transparent-text: var(--text-3);
-    --border: hsla(231, 20%, 40%, 0) !important;
-    --border-light: hsla(229, 14%, 30%, 0) !important;
-    --button-border: hsla(0, 0%, 100%, 0) !important;
+    --border: hsla(231, 20%, 40%, 0.1) !important;
+    --border-light: hsl(0, 0%, 100%, 0.1%) !important;
+    --button-border: hsla(0, 0%, 50%, 0.2) !important;
     --border-faint: var(--border-light);
     --border-subtle: var(--border);
     --border-normal: var(--border);
@@ -918,9 +939,37 @@ body {
     .accountProfileCard__1fed1  {
         background-color: var(--bg-3);
     }
+    .root_bfe55a {
+        position: relative;
+        overflow: hidden;
+        align-items: center;
+        background: none;
+        color: transparent;
+    }
+    .root_bfe55a::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+        to bottom,
+        rgb(from var(--accent-4) r g b / 0.2) 0%,
+        rgb(from var(--accent-4) r g b / 0.1) 5%,
+        rgb(from var(--accent-4) r g b / 0.05) 10%,
+        transparent 30%
+        );
+        opacity: 0;
+        transition: opacity 0.2s ease-out;
+        pointer-events: none;
+    }
+    .root_bfe55a:hover::before {
+        opacity: 1;
+    }
+    .gradientContainer_bfe55a {
+        background-image: none;
+    }
     .colorable_f1ceac.primaryDark_f1ceac,
     .reaction_f8896c  {
-        background-color: var(--bg-2);
+            background-color: var(--bg-2);
     }
     .expandedFolderIconWrapper__48112 > svg[style="color: rgb(88, 101, 242);"]  {
         color: var(--accent-2) !important;
