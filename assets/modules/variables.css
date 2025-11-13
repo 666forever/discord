@@ -7,7 +7,7 @@ body {
     font-weight: 200;
     font-style: normal;
 
-
+}
 :root {
     --red-1: oklch(76% 0.12 0);
     --red-2: oklch(70% 0.12 0);
