@@ -19,15 +19,18 @@
 
 /*   🍡 ﹑ modules 
 */
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
 
 /*   🧃 ﹑ font
 */
-    --font: 'Oxygen', 'gg sans', 'Noto Sans', 'Segoe UI Emoji', sans-serif;
+    --font: 'Stack Sans Text', 'Oxygen', 'gg sans', 'Noto Sans', 'Segoe UI Emoji', sans-serif;
     --code-font: 'Courier Prime', 'gg mono', 'Segoe UI Emoji', 'gg sans', monospace;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
 
 
 /*   🧁 ﹑ flavour
@@ -41,7 +44,7 @@
     --bg-wallpaper: url('https://raw.githubusercontent.com/whoisYoges/lwalpapers/PicturesOnly/wallpapers/b-464.jpg');
     --homebutton-image: url('https://666forever.github.io/discord/assets/badcat.svg');
     --userpanel-image: url('https://i.imgur.com/V34fx3F.gif');
-    --prompt-text: "...nana-nanana..";
+    --prompt-text: "its gonna be okay";
 
 
 /*   🍭 ﹑ colours
