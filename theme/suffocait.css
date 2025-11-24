@@ -146,11 +146,11 @@ body {
     --purple-4: oklch(60% 0.11 310);
     --purple-5: oklch(55% 0.11 310);
 
-    --customcc-1: oklch(63% 0.09 220);
-    --customcc-2: oklch(58% 0.09 220);
-    --customcc-3: oklch(53% 0.09 220);
-    --customcc-4: oklch(48% 0.09 220);
-    --customcc-5: oklch(43% 0.09 220);
+    --customcc-1: #999999;
+    --customcc-2: #777777;
+    --customcc-3: #555555;
+    --customcc-4: #444444;
+    --customcc-5: #333333;
 }
 .visual-refresh {
 
