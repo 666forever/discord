@@ -176,7 +176,7 @@ body {
         background: none !important;
     }
     div[class*="cozy_"] span[class*="timestamp_"] {
-        color: var(--accent-3);
+        color: var(--accent-5);
         font-size: .75rem;
         line-height: 1.375rem;
         vertical-align: baseline;
