@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="109.44321mm"
+   height="48.378437mm"
+   viewBox="0 0 109.44321 48.378437"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-42.817229,-120.38865)">
+    <rect
+       style="fill:#d93131;fill-opacity:1;stroke-width:0.255919"
+       id="rect2"
+       width="98.368446"
+       height="49.62986"
+       x="81.451294"
+       y="123.50279"
+       transform="matrix(1,0,-0.22314719,0.97478476,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.4212px;font-family:Geist;-inkscape-font-specification:'Geist, @wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 900;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#202020;fill-opacity:1;stroke-width:0.23136"
+       x="85.931274"
+       y="159.51749"
+       id="text4"
+       transform="skewX(-12.891468)"><tspan
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.4212px;font-family:Geist;-inkscape-font-specification:'Geist, @wght=900';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 900;stroke-width:0.23136"
+         x="85.931274"
+         y="159.51749">PFS</tspan></text>
+  </g>
+</svg>
